@@ -6,32 +6,33 @@
     <title>Capítulo 21 - Tabelas</title>
     <style>
         body {
-            background-color: aliceblue;
-            color: black;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(99, 99, 99);
+            color: rgb(0, 0, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         table {
-            width: 400px;
-            height: 400px;
+            width: 500px;
+            height: 500px;
             border-collapse: collapse;
             color: aliceblue;
         }
 
         td {
-            border: 3px dashed black;
+            border: 3px solid white;
             padding: 8px;
             text-align: center;
             vertical-align: middle;
         }
 
-        .numero {
-            text-align: right;
-            vertical-align: bottom;
+        .bg1 {
+            background-color: darkblue;
         }
-        #bg {
-            border-radius: 8px;
-            background-image: linear-gradient(to left, red 50%, rgb(0, 76, 255) 50%);
+        .bg2 {
+            background-color: red;
+        }
+        .bg3 {
+            background-color: black;
         }
     </style>
 </head>
@@ -45,26 +46,21 @@
 
     -->
     <h1>Tabelas</h1>
-    <table id="bg">
-        <tr>
+    <table>
+        <tr class="bg1">
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr>
-            <td class="numero">A2</td>
+        <tr class="bg2">
+            <td>A2</td>
             <td>B2</td>
             <td>C3</td>
         </tr>
-        <tr>
-            <td class="numero">A3</td>
+        <tr class="bg3">
+            <td>A3</td>
             <td>B3</td>
             <td>C3</td>
-        </tr>
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td class="numero">C4</td>
         </tr>
     </table>
 </body>
