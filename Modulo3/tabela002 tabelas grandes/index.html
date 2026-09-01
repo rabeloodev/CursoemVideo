@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background: #383838;
+            color: #fff;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!---- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE 
+            CAPTION 
+            THEAD 
+                TR, TD, TH 
+            TBODY 
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">12.345.678</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">9.876.543</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">8.765.432</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">7.654.321</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">6.543.210</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">5.432.109</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">4.321.098</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.210.987</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td class="num">2.109.876</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita temporibus assumenda eveniet ipsam illum debitis aspernatur sed non molestias, alias, incidunt deserunt ut, neque accusamus tempora aliquam optio! Laborum, voluptates?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit labore culpa, facilis ducimus, possimus facere, pariatur itaque optio tempora fugiat dolores sapiente maiores hic molestias perferendis qui nostrum architecto minus.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eos ipsum deserunt temporibus odit doloribus deleniti molestiae, quidem incidunt eaque quo veniam cupiditate aut perferendis error assumenda numquam eius recusandae?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vitae quos atque reiciendis eligendi doloremque dolor alias fuga sed laboriosam! Eveniet officia aspernatur illo pariatur ea soluta sed est ipsam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias asperiores placeat tempora vitae, repellat doloribus sint quas perferendis, officia architecto facilis a ea maxime labore fugiat. Explicabo, dolorem optio.</p>
+</body>
+</html>
